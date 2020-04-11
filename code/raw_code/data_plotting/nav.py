@@ -15,7 +15,8 @@ def Nav_Side():
             dbc.NavItem(dbc.NavLink("population occupée", href="#")),
             dbc.NavItem(dbc.NavLink("population en chômage",href="#" )),
             dbc.NavItem(dbc.NavLink("secteur privé", href="#")),
-            dbc.NavItem(dbc.NavLink("bureau d'emploi", href="#"))
+            dbc.NavItem(dbc.NavLink("bureau d'emploi", href="#")),
+            dbc.NavItem(dbc.NavLink("travailleurs indépendants", href="#"))
         
         ],
         vertical="md"
