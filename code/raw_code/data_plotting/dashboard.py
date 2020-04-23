@@ -14,16 +14,16 @@ from nav import Nav_Side
 from button import Buttons
 import codecs
 
-
 external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css',dbc.themes.BOOTSTRAP]
 app=dash.Dash(__name__,external_stylesheets=external_stylesheets)
 
-f=codecs.open("fig1.html", 'r')
-figure=f.read()
+# f=codecs.open("fig1.html", 'r')
+# figure=f.read()
+
+f=open("fig1.html","r").read()
 
 nav=Navbar()
 nav_side=Nav_Side()
-
 buttons =Buttons() 
 
 
@@ -33,7 +33,7 @@ app.layout = html.Div([
             [
                 dbc.Col(nav_side, width=2),
                 dbc.Col(buttons),
-                dbc.Col(figure)
+                dbc.Col(dcc.Graph(figure={%store -r figtun}))
                 
             ]
         )
