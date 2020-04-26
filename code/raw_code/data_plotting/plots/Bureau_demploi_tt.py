@@ -2,7 +2,6 @@
 # coding: utf-8
 
 import pandas as pd
-import plotly.express as px
 import plotly.graph_objects as go
 
 # In[2]:
@@ -196,15 +195,6 @@ def offre_emploi():
   return fig
 
 
-# In[15]:
-
-
-fig1.write_html("Evolution_demandes_emploi.html")
-fig2.write_html("demande_emploi_hvf.html")
-fig3.write_html("demande_emploi.html")
-fig4.write_html("Demandes_emploi_Vs_Offres_reçues.html")
-fig5.write_html("evolution_offre_emploi.html")
-fig.write_html("offre_emploi.html")
 
 
 

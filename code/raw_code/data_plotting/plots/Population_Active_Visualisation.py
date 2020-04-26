@@ -251,11 +251,12 @@ fig1_max_t.add_trace(go.Indicator(
     delta = {'position': "top", 'reference': 320},
     domain = {'x': [0, 1], 'y': [0, 1]}))
 
-fig1_max_t.update_layout(paper_bgcolor = "white",font=dict(
+fig1_max_t.update_layout(paper_bgcolor = "white",
+                         width=300,
+                         height=200,
+                         font=dict(
                  family=" Gravitas One, cursive",
                  size=13))
-
-fig1_max_t.show()
 
 
 # In[9]:
@@ -269,11 +270,13 @@ fig1_max_t_m.add_trace(go.Indicator(
     delta = {'position': "top", 'reference': 320},
     domain = {'x': [0, 1], 'y': [0, 1]}))
 
-fig1_max_t_m.update_layout(paper_bgcolor = "white",font=dict(
+fig1_max_t_m.update_layout(paper_bgcolor = "white",
+                           width=300,
+                         height=200,font=dict(
                  family=" Gravitas One, cursive",
-                 size=13))
+                 size=20))
 
-fig1_max_t_m.show()
+
 
 
 # In[10]:
@@ -287,11 +290,13 @@ fig1_max_f.add_trace(go.Indicator(
     delta = {'position': "top", 'reference': 320},
     domain = {'x': [0, 1], 'y': [0, 1]}))
 
-fig1_max_f.update_layout(paper_bgcolor = "white",font=dict(
+fig1_max_f.update_layout(paper_bgcolor = "white",
+                         width=300,
+                         height=200,
+                         font=dict(
                  family=" Gravitas One, cursive",
                  size=13))
 
-fig1_max_f.show()
 
 
 # In[11]:
@@ -305,10 +310,12 @@ fig_min_t.add_trace(go.Indicator(
     delta = {'position': "top", 'reference': 320},
     domain = {'x': [0, 1], 'y': [0, 1]}))
 
-fig_min_t.update_layout(paper_bgcolor = "white",font=dict(
+fig_min_t.update_layout(paper_bgcolor = "white",
+                        width=300,
+                         height=200,font=dict(
                  family=" Gravitas One, cursive",
                  size=13))
-fig_min_t.show()
+
 
 
 # In[12]:
@@ -322,11 +329,12 @@ fig_min_t_m.add_trace(go.Indicator(
     delta = {'position': "top", 'reference': 320},
     domain = {'x': [0, 1], 'y': [0, 1]}))
 
-fig_min_t_m.update_layout(paper_bgcolor = "white",font=dict(
+fig_min_t_m.update_layout(paper_bgcolor = "white",
+                          width=300,
+                         height=200,font=dict(
                  family=" Gravitas One, cursive",
                  size=13))
 
-fig_min_t_m.show()
 
 
 # In[13]:
@@ -340,11 +348,13 @@ fig_min_f.add_trace(go.Indicator(
     delta = {'position': "top", 'reference': 320},
     domain = {'x': [0, 1], 'y': [0, 1]}))
 
-fig_min_f.update_layout(paper_bgcolor = "white",font=dict(
+fig_min_f.update_layout(paper_bgcolor = "white",
+                        width=300,
+                         height=200,font=dict(
                  family=" Gravitas One, cursive",
                  size=13))
 
-fig_min_f.show()
+
 
 
 # In[14]:
@@ -563,5 +573,6 @@ def population_active_sex():
     return fig_bar_15
 
 
-
+def indicators():
+    return(fig1_max_t,fig1_max_t_m,fig1_max_f,fig_min_t,fig_min_t_m,fig_min_f)
 
