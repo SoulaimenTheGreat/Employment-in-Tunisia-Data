@@ -11,7 +11,7 @@ def Nav_Side():
     nav = dbc.Navbar(
         dbc.Nav(
         [
-            dbc.NavItem(dbc.NavLink("population active", href="#")),
+            dbc.NavItem(dbc.NavLink("population active",id="population active", href="#")),
             dbc.NavItem(dbc.NavLink("population occupée", href="#")),
             dbc.NavItem(dbc.NavLink("population en chômage",href="#" )),
             dbc.NavItem(dbc.NavLink("secteur privé", href="#")),
