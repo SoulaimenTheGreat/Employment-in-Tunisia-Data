@@ -43,6 +43,6 @@ page1=dbc.Col([
                                indicators_min_1,
                                first,
                                second
-                               ])
+                               ],id="page_1")
 def Page1():
     return page1
