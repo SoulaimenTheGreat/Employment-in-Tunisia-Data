@@ -1,0 +1,68 @@
+{% extends "base-site.html" %}
+
+{% block title %} UI Icons {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+   <html>
+
+ 
+<body style="background-color:#FFFFFF;">
+            
+			    <div class="header">
+        <h2>
+            <center><strong>{{template}}</strong></center>
+        </h2>
+    </div>
+			<div class="row">
+			<div class="col-sd-3"></div>
+			<div class="col-sd-8">
+			<strong>Actuellement, le marché du travail en Tunisie est caractérisé par des tensions importantes:</strong> </br>
+			         <li>les différences entre l'offre et la demande d'emploi,
+					inadéquation entre les profils des demandeurs d'emploi et les profils recherchés par les entreprises,
+					les licenciements pour des raisons économiques et l'insécurité de l'emploi..</li>
+             </br>
+			<li>La nécessité d'un tableau de bord pour résoudre ce problème,Ce tableau de bord présente des chiffres et des indicateurs concernant l'emploi en Tunisie, le chômage, la répartition du taux de chômage dans les villes tunisiennes, le taux de la population active et salariée, ainsi que le taux d'offres et demandes d'emplois en Tunisie.
+            
+          </br>
+</br>
+			<li>Notre tableau de bord présente des visualisations de données interactives (graphiques linéaires, graphiques à barres) conçues pour aider les décideurs,cadres supérieurs et supérieurs, fixer des objectifs, fixer des objectifs et comprendre quoi et pourquoi quelque chose est arrivé avec les mêmes informations qu'ils peuvent utiliser pour mettre en œuvre les modifications appropriées..</li>
+	          </div>
+			  
+			</div>
+			  
+			  
+			  
+			
+	
+ 
+</body>
+ 
+    <!-- D3.js -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+ 
+    <script type="text/javascript">
+         
+        var graphs = {{plot1 | safe}};
+        
+        Plotly.plot('chart1',graphs,{}); 		
+ 
+    </script>
+    <script type="text/javascript">
+         
+        var graphs = {{plot2 | safe}};
+        
+        Plotly.plot('chart2',graphs,{}); 		
+ 
+    </script>
+ 
+</html>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

@@ -1,0 +1,162 @@
+{% extends "base-site.html" %}
+
+{% block title %} UI Typography {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<html>
+
+ 
+<body>
+    <div class="header">
+        <h2>
+           <center><strong>{{template}}</strong></center>
+        </h2>
+    </div>
+	  <div class="row">
+      <div class="col-md-6">
+        <div class="card card-chart">
+          <div class="card-header card-header-success">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-6">         
+			 <div id="chart3" class="chart">
+			</div></div>
+		  </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card card-chart">
+          <div class="card-header card-header-success">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-6">         
+			 <div id="chart6" class="chart">
+			</div></div>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+    <div class="row">
+	 <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-warning">
+                  <h4 class="card-title ">Evolution de nombre des employés indépendants entre 1991 et 2019</h4>
+                  
+                </div>
+	 <div id="chart1" class="chart">
+    </div></div></div></div>
+	<div class="row">
+      <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-info">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-3">         
+			 <div id="chart4" class="chart">
+			</div></div>
+		  </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-danger">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-3">         
+			 <div id="chart5" class="chart">
+			</div></div>
+          </div>
+       
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-info">
+         
+          </div>
+          <div class="card-body">
+           <div class="col-md-3">         
+			 <div id="chart7" class="chart">
+			</div></div>
+          </div>
+        
+        </div>
+      </div>
+	        <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-danger">
+         
+          </div>
+          <div class="card-body">
+           <div class="col-md-3">         
+			 <div id="chart8" class="chart">
+			</div></div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+<div class="row">
+	 <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-warning">
+                  <h4 class="card-title ">Evolution de nombre des employés hommes par rapport aux femmes entre 1991 et 2019</h4>
+                  
+                </div>
+	 <div id="chart2" class="chart">
+    </div></div></div></div>
+ 
+</body>
+ 
+    <!-- D3.js -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+ 
+    <script type="text/javascript">
+         
+        var graphs = {{plot1 | safe}};
+        
+        Plotly.plot('chart1',graphs,{}); 		
+ 
+    </script>
+    <script type="text/javascript">
+         
+        var graphs = {{plot2 | safe}};
+        
+        Plotly.plot('chart2',graphs,{}); 
+        var graphs3 = {{plot3 | safe}};
+        
+        Plotly.plot('chart3',graphs3,{}); 
+        var graphs4 = {{plot4 | safe}};
+        
+        Plotly.plot('chart4',graphs4,{}); 
+        var graphs5 = {{plot5 | safe}};
+        
+        Plotly.plot('chart5',graphs5,{}); 
+        var graphs6 = {{plot6 | safe}};
+        
+        Plotly.plot('chart6',graphs6,{}); 
+        var graphs7 = {{plot7 | safe}};
+        
+        Plotly.plot('chart7',graphs7,{}); 
+        var graphs8 = {{plot8 | safe}};
+        
+        Plotly.plot('chart8',graphs8,{}); 		
+ 
+    </script>
+ 
+</html>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

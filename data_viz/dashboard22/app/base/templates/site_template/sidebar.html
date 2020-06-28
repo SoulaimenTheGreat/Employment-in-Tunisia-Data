@@ -1,0 +1,63 @@
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="/static/assets/img/sidebar-1.jpg">
+      <div class="logo">
+        <a href="#" class="simple-text logo-normal">
+          Emploi en Tunisie<i class="tn flag"></i>
+        </a>
+      </div>
+      {% if current_user.is_authenticated %}
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#">
+              <i class="material-icons">Dashboard</i>
+              <p>Menu</p>
+            </a>
+          </li>
+		   <li class="nav-item ">
+            <a class="nav-link" href="/PopulationActive">
+              <i class="material-icons">timeline</i>
+              <p>Population active</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/Populationoccupée">
+              <i class="material-icons">timeline</i>
+              <p>Population occupée</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/Chômeurs">
+              <i class="material-icons">timeline</i>
+              <p>Chômeurs</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/Nonsalariés">
+              <i class="material-icons">timeline</i>
+              <p>Non salariés</p>
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/Bureauemploi">
+              <i class="material-icons">timeline</i>
+              <p>Bureau d'emploi</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/Cartetunisienne">
+              <i class="material-icons">timeline</i>
+              <p>Carte tunisienne</p>
+            </a>
+          </li>
+            <li class="nav-item ">
+            <a class="nav-link" href="/Story">
+              <i class="material-icons">timeline</i>
+              <p>Story</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      {% endif %}
+
+    </div>

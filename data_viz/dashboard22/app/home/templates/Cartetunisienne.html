@@ -1,0 +1,106 @@
+{% extends "base-site.html" %}
+
+{% block title %} UI Notifications {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<html>
+
+ 
+<body>
+    <div class="header">
+        <h2>
+           <center><strong>{{template}}</strong></center>
+        </h2>
+    </div>
+			<div class="card">
+	<div class="card-header ">
+                  <h4 class="card-title "></h4>
+                  
+                </div>
+   	<div class="row">
+	     
+                
+      <div class="col-md-6">
+        <div class="card card-chart">
+          <div class="card-header card-header-success">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-6">         
+			 <div id="chart2" class="chart">
+			</div></div>
+		  </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card card-chart">
+          <div class="card-header card-header-info">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-6">         
+			 <div id="chart3" class="chart">
+			</div></div>
+          </div>
+       
+        </div>
+      </div>
+  
+    </div>
+	 </div>
+     <div class="row">
+	 <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-warning">
+                  <h4 class="card-title ">Répartition du taux de chomage dans les villes Tunisiennes</h4>
+                  
+                </div>
+	 <div id="chart1" class="chart">
+    </div></div></div></div>
+
+ 
+</body>
+ 
+    <!-- D3.js -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+ 
+    <script type="text/javascript">
+         
+        var graphs = {{plot1 | safe}};
+        
+        Plotly.plot('chart1',graphs,{}); 		
+ 
+    </script>
+    <script type="text/javascript">
+         
+        var graphs2 = {{plot2 | safe}};
+        
+        Plotly.plot('chart2',graphs2,{}); 
+        var graphs3 = {{plot3 | safe}};
+        
+        Plotly.plot('chart3',graphs3,{}); 
+ 		
+ 
+    </script>
+ 
+</html>
+
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script>
+    $(document).ready(function() {
+      //init DateTimePickers
+      md.initFormExtendedDatetimepickers();
+    });
+  </script>
+  
+{% endblock javascripts %}

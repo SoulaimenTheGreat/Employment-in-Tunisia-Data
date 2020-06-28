@@ -1,0 +1,322 @@
+{% extends "base-site.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+ <html>
+
+ 
+<body>
+    <div class="header">
+        <h2>
+            <center><strong>{{template}}</strong></center>
+        </h2>
+    </div>
+	
+	   <div class="row">
+      <div class="col-md-6">
+        <div class="card card-chart">
+          <div class="card-header card-header-success">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-6">         
+			 <div id="chart5" class="chart">
+			</div></div>
+		  </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card card-chart">
+          <div class="card-header card-header-success">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-6">         
+			 <div id="chart8" class="chart">
+			</div></div>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+	 <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Evolution du taux de la population active occupée entre 2011 & 2019</h4>
+                  
+                </div>
+	 <div id="chart1" class="chart">
+    </div></div></div></div>
+	
+	<div class="row">
+      <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-info">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-3">         
+			 <div id="chart6" class="chart">
+			</div></div>
+		  </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-danger">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-3">         
+			 <div id="chart7" class="chart">
+			</div></div>
+          </div>
+       
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-info">
+         
+          </div>
+          <div class="card-body">
+           <div class="col-md-3">         
+			 <div id="chart9" class="chart">
+			</div></div>
+          </div>
+        
+        </div>
+      </div>
+	        <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-danger">
+         
+          </div>
+          <div class="card-body">
+           <div class="col-md-3">         
+			 <div id="chart10" class="chart">
+			</div></div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+	<div class="row">
+	 <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Evolution du taux de la population active occupée selon le genre entre 2011 & 2019</h4>
+                  
+                </div>
+	 <div id="chart2" class="chart">
+    </div></div></div></div>
+	
+	<div class="row">
+      <div class="col-md-6">
+        <div class="card card-chart">
+          <div class="card-header card-header-success">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-6">         
+			 <div id="chart12" class="chart">
+			</div></div>
+		  </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card card-chart">
+          <div class="card-header card-header-success">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-6">         
+			 <div id="chart15" class="chart">
+			</div></div>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+	<div class="row">
+	 <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Evolution du taux de la population active entre 2011 & 2019</h4>
+                  
+                </div>
+	 <div id="chart3" class="chart">
+    </div></div></div></div>
+		<div class="row">
+      <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-info">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-3">         
+			 <div id="chart13" class="chart">
+			</div></div>
+		  </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-danger">
+            
+          </div>
+          <div class="card-body">
+            <div class="col-md-3">         
+			 <div id="chart14" class="chart">
+			</div></div>
+          </div>
+       
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-info">
+         
+          </div>
+          <div class="card-body">
+           <div class="col-md-3">         
+			 <div id="chart16" class="chart">
+			</div></div>
+          </div>
+        
+        </div>
+      </div>
+	        <div class="col-md-3">
+        <div class="card card-chart">
+          <div class="card-header card-header-danger">
+         
+          </div>
+          <div class="card-body">
+           <div class="col-md-3">         
+			 <div id="chart17" class="chart">
+			</div></div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+   <div class="row">
+	 <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Evolution du taux de la population active selon le genre entre 2011 & 2019</h4>
+                  
+                </div>
+	 <div id="chart11" class="chart">
+    </div></div></div></div>
+
+
+ 
+</body>
+ 
+    <!-- D3.js -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+ 
+    <script type="text/javascript">
+         
+        var graphs = {{plot1 | safe}};
+        
+        Plotly.plot('chart1',graphs,{}); 		
+ 
+    </script>
+    <script type="text/javascript">
+         
+        var graphs = {{plot2 | safe}};
+        
+        Plotly.plot('chart2',graphs,{}); 		
+ 
+    </script>
+	
+	<script type="text/javascript">
+         
+        var graphs = {{plot3 | safe}};
+        
+        Plotly.plot('chart3',graphs,{}); 		
+ 
+    </script>
+    <script type="text/javascript">
+         
+        var graphs = {{plot4 | safe}};
+        
+        Plotly.plot('chart4',graphs,{}); 		
+ 
+    </script>
+	    <script type="text/javascript">
+         
+        var graphs5 = {{plot5 | safe}};
+        
+        Plotly.plot('chart5',graphs5,{}); 
+
+        var graphs6 = {{plot6 | safe}};
+        
+        Plotly.plot('chart6',graphs6,{});
+        var graphs7 = {{plot7 | safe}};
+        
+        Plotly.plot('chart7',graphs7,{});	
+
+        var graphs8 = {{plot8 | safe}};
+        
+        Plotly.plot('chart8',graphs8,{}); 
+
+        var graphs9 = {{plot9 | safe}};
+        
+        Plotly.plot('chart9',graphs9,{});
+        var graphs10 = {{plot10 | safe}};
+        
+        Plotly.plot('chart10',graphs10,{});		
+         var graphs11 = {{plot11 | safe}};
+        
+        Plotly.plot('chart11',graphs11,{});
+         var graphs12 = {{plot12 | safe}};
+        
+        Plotly.plot('chart12',graphs12,{});
+         var graphs13 = {{plot13 | safe}};
+        
+        Plotly.plot('chart13',graphs13,{});
+         var graphs14 = {{plot14 | safe}};
+        
+        Plotly.plot('chart14',graphs14,{});
+         var graphs15 = {{plot15 | safe}};
+        
+        Plotly.plot('chart15',graphs15,{});
+         var graphs16 = {{plot16 | safe}};
+        
+        Plotly.plot('chart16',graphs16,{});
+         var graphs17 = {{plot17 | safe}};
+        
+        Plotly.plot('chart17',graphs17,{});
+		
+ 
+    </script>
+		
+ 
+</html>
+
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      md.initDashboardPageCharts();
+
+    });
+  </script>
+
+{% endblock javascripts %}
